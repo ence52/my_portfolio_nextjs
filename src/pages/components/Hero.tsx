@@ -28,7 +28,7 @@ const Hero = () => {
           width={1000}
           height={1000}
           className="contrast-150"
-          src={"/images/hero/hero4.png"}
+          src={"/images/hero/hero.png"}
         />
       </div>
     </section>
