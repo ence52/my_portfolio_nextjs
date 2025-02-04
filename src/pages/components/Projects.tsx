@@ -29,6 +29,11 @@ const ecommerceapiPhotos = [
   "/images/projects/ecommerceapi/2.png",
   "/images/projects/ecommerceapi/3.png",
 ];
+const mongoredisapiPhotos = [
+  "/images/projects/mongoredisapi/1.png",
+  "/images/projects/mongoredisapi/2.png",
+  "/images/projects/mongoredisapi/3.png",
+];
 const listracePhotos = [
   "/images/projects/listrace/1.png",
   "/images/projects/listrace/2.png",
@@ -51,7 +56,7 @@ const projectList: ProjectInfo[] = [
     id: 0,
     name: "E-Commerce App",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quis sequi aut placeat vitae! Non fuga, nesciunt culpa laudantium excepturi eius explicabo inventore voluptate deleniti. Iusto tenetur est minima nobis architecto soluta officiis? Quisquam quidem exercitationem nihil dolorem consequuntur aspernatur. Porro fuga repellendus labore dolores. Qui, modi, beatae voluptates magnam voluptatibus tempora adipisci asperiores dolore iusto nulla sed quos dolorem culpa illum provident quidem itaque velit sint placeat quae rem hic minus quia est. Voluptatem vero at nesciunt dolorem ut.",
+      "This is a fully functional E-Commerce mobile app built with Flutter and Dart. It allows users to browse products, add them to the cart, and proceed to checkout. The app features a smooth, responsive UI, and leverages Flutter's powerful framework for a seamless cross-platform experience.",
     images: ecommercePhotos,
     mobile: true,
     techs: ["Flutter", "Dart", "VS Code"],
@@ -61,7 +66,7 @@ const projectList: ProjectInfo[] = [
     id: 1,
     name: "E-Commerce API",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quis sequi aut placeat vitae! Non fuga, nesciunt culpa laudantium excepturi eius explicabo inventore voluptate deleniti. Iusto tenetur est minima nobis architecto soluta officiis? Quisquam quidem exercitationem nihil dolorem consequuntur aspernatur. Porro fuga repellendus labore dolores. Qui, modi, beatae voluptates magnam voluptatibus tempora adipisci asperiores dolore iusto nulla sed quos dolorem culpa illum provident quidem itaque velit sint placeat quae rem hic minus quia est. Voluptatem vero at nesciunt dolorem ut.",
+      "This is the backend API for an E-Commerce platform, built with FastAPI and Python. It handles product listings, user authentication, order management, and payment processing. The app is powered by MySQL for database management and Docker for containerization, ensuring scalability and ease of deployment.",
     images: ecommerceapiPhotos,
     mobile: false,
     techs: ["Fastapi", "Python", "MySQL", "PhpMyAdmin", "Docker", "VS Code"],
@@ -71,7 +76,7 @@ const projectList: ProjectInfo[] = [
     id: 2,
     name: "Bakery App",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quis sequi aut placeat vitae! Non fuga, nesciunt culpa laudantium excepturi eius explicabo inventore voluptate deleniti. Iusto tenetur est minima nobis architecto soluta officiis? Quisquam quidem exercitationem nihil dolorem consequuntur aspernatur. Porro fuga repellendus labore dolores. Qui, modi, beatae voluptates magnam voluptatibus tempora adipisci asperiores dolore iusto nulla sed quos dolorem culpa illum provident quidem itaque velit sint placeat quae rem hic minus quia est. Voluptatem vero at nesciunt dolorem ut.",
+      "The Bakery App allows users to explore a variety of bakery products, view their details, and place orders directly from the app. Built with Flutter, this mobile app provides an engaging user experience with smooth navigation and real-time updates for product availability.",
     images: bakeryPhotos,
     mobile: true,
     techs: ["Flutter", "Dart", "VS Code"],
@@ -81,7 +86,7 @@ const projectList: ProjectInfo[] = [
     id: 3,
     name: "Car Selling App",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quis sequi aut placeat vitae! Non fuga, nesciunt culpa laudantium excepturi eius explicabo inventore voluptate deleniti. Iusto tenetur est minima nobis architecto soluta officiis? Quisquam quidem exercitationem nihil dolorem consequuntur aspernatur. Porro fuga repellendus labore dolores. Qui, modi, beatae voluptates magnam voluptatibus tempora adipisci asperiores dolore iusto nulla sed quos dolorem culpa illum provident quidem itaque velit sint placeat quae rem hic minus quia est. Voluptatem vero at nesciunt dolorem ut.",
+      "This app enables users to browse and list cars for sale. With its intuitive design, users can upload their car listings with ease, view available cars, and filter results based on their preferences. The app was built using Flutter to provide a native-like experience on both Android and iOS platforms.",
     images: carPhotos,
     mobile: true,
     techs: ["Flutter", "Dart", "VS Code"],
@@ -91,7 +96,7 @@ const projectList: ProjectInfo[] = [
     id: 4,
     name: "ListRace Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quis sequi aut placeat vitae! Non fuga, nesciunt culpa laudantium excepturi eius explicabo inventore voluptate deleniti. Iusto tenetur est minima nobis architecto soluta officiis? Quisquam quidem exercitationem nihil dolorem consequuntur aspernatur. Porro fuga repellendus labore dolores. Qui, modi, beatae voluptates magnam voluptatibus tempora adipisci asperiores dolore iusto nulla sed quos dolorem culpa illum provident quidem itaque velit sint placeat quae rem hic minus quia est. Voluptatem vero at nesciunt dolorem ut.",
+      "The ListRace website is a dynamic platform built with React. It allows users to create and view lists, track race results, and interact with various features through a clean and user-friendly interface. The website is designed for seamless navigation, offering a responsive experience on both desktop and mobile devices.",
     images: listracePhotos,
     mobile: false,
     techs: ["React", "Javascript", "Html", "CSS", "VS Code"],
@@ -101,8 +106,8 @@ const projectList: ProjectInfo[] = [
     id: 5,
     name: ".Net API",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quis sequi aut placeat vitae! Non fuga, nesciunt culpa laudantium excepturi eius explicabo inventore voluptate deleniti. Iusto tenetur est minima nobis architecto soluta officiis? Quisquam quidem exercitationem nihil dolorem consequuntur aspernatur. Porro fuga repellendus labore dolores. Qui, modi, beatae voluptates magnam voluptatibus tempora adipisci asperiores dolore iusto nulla sed quos dolorem culpa illum provident quidem itaque velit sint placeat quae rem hic minus quia est. Voluptatem vero at nesciunt dolorem ut.",
-    images: listracePhotos,
+      "This is a RESTful API built using .NET Core and C#, providing a solid backend for handling data storage and real-time processing. It integrates MongoDB for efficient data storage and Redis for caching to improve performance. Docker is used for containerization, ensuring smooth deployment across environments.",
+    images: mongoredisapiPhotos,
     mobile: false,
     techs: [".net Core", "C#", "MongoDB", "Redis", "Docker", "Visual Studio"],
     githubLink: "https://github.com/ence52/mongo_redis_dotnet_api",
@@ -126,7 +131,7 @@ export default Projects;
 
 const ProjectCard: FC<{ project: ProjectInfo }> = ({ project }) => {
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -136,18 +141,20 @@ const ProjectCard: FC<{ project: ProjectInfo }> = ({ project }) => {
 
   return (
     <div
-      className={` justify-between md:p-10 p-5 bg-secondBlack rounded-3xl my-10 ${
-        project.mobile ? "grid grid-cols-4" : "flex flex-col-reverse"
+      className={` justify-between md:p-10 p-5 bg-secondBlack rounded-3xl my-10 gap-y-10 ${
+        project.mobile
+          ? "md:grid grid-cols-4 flex flex-col-reverse"
+          : "flex flex-col-reverse"
       }`}
       data-aos="fade-up"
       data-aos-duration="1000"
     >
       <div
-        className={`md:p-10 flex flex-col justify-between col-span-3 gap-y-6 ${
-          project.id % 2 == 0 && project.mobile! ? "order-2" : "order-1"
+        className={`md:px-10 flex flex-col justify-between col-span-3 gap-y-4 ${
+          project.id % 2 == 0 && project.mobile! ? "md:order-2" : "md:order-1"
         }`}
       >
-        <div className="flex flex-col gap-y-6">
+        <div className="flex flex-col gap-y-6 ">
           <p className="text-2xl font-semibold">{project.name}</p>
           <p className="md:text-lg text-base font-light">
             {project.description}
@@ -169,16 +176,18 @@ const ProjectCard: FC<{ project: ProjectInfo }> = ({ project }) => {
           target="_blank"
           className={`md:w-1/3 outline bg-turqoise outline-1 px-4 py-2 text-center  rounded-xl outline-lightBlack text-black duration-700 ${
             project.id % 2 === 0 ? "self-end" : "self-start"
-          }`}
+          } `}
         >
           Show on GitHub
         </Link>
       </div>
 
       <div
-        className={`col-span-1 ${project.id % 2 === 0 ? "order-1" : "order-2"}`}
+        className={`col-span-1 ${
+          project.id % 2 === 0 ? "md:order-1" : "md:order-2"
+        }`}
       >
-        <Slider {...sliderSettings}>
+        <Slider {...sliderSettings} className="bg-primaryBlack rounded-2xl">
           {project.images.map((imgSrc, index) => (
             <Image
               width={3000}
@@ -187,8 +196,10 @@ const ProjectCard: FC<{ project: ProjectInfo }> = ({ project }) => {
               src={imgSrc}
               alt={`Project ${project.id} - Image ${index}`}
               className={`rounded-2xl ${
-                project.mobile ? "h-[510px]" : "h-[560px]"
-              } w-full object-cover`}
+                project.mobile
+                  ? "md:h-[510px] h-[570px] object-cover"
+                  : "md:h-[560px] h-[200px] object-contain"
+              } w-full `}
             />
           ))}
         </Slider>

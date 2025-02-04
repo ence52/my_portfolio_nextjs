@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 grid-cols-1 md:justify-center  gap-y-8 items-start mb-20 pb-20 border-b-[1px] border-lightBlack "
+      className="grid md:grid-cols-2 grid-cols-1 md:justify-center  gap-y-8 items-start pb-20 border-b-[1px] border-lightBlack "
     >
       {/* CONTACT ME SECTION */}
       <div className="flex flex-col md:text-xl gap-y-6 text-base">
@@ -14,7 +14,11 @@ const Contact = () => {
 
         <div className="md:flex justify-around font-light flex flex-col gap-y-6">
           <div className="flex flex-col gap-y-2 ">
-            <p className="text-white flex gap-x-4">
+            <p
+              className="text-white flex gap-x-4 "
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <Image
                 alt=""
                 src="/images/svg/email.svg"
@@ -23,7 +27,11 @@ const Contact = () => {
               />
               ince52erkan@gmail.com
             </p>
-            <p className="text-white flex gap-x-4">
+            <p
+              className="text-white flex gap-x-4"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <Image
                 alt=""
                 src="/images/svg/phone.svg"
@@ -41,6 +49,8 @@ const Contact = () => {
               <Link
                 className="flex items-center gap-x-2 h-12 w-12"
                 href="https://www.linkedin.com/in/erkanince/"
+                data-aos="fade-right"
+                data-aos-duration="500"
               >
                 <Image
                   alt=""
@@ -52,6 +62,8 @@ const Contact = () => {
               </Link>
               <Link
                 className="flex items-center gap-x-2 h-12 w-12"
+                data-aos="fade-right"
+                data-aos-duration="500"
                 href="https://github.com/ence52"
               >
                 <Image
@@ -66,27 +78,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* CONTACT FORM */}
-      <div className="flex flex-col  text-lg gap-y-6 items-start  ">
-        <p className="text-3xl self-start">Contact Form</p>
-        <form className="gap-y-4 flex flex-col">
-          <label className="flex flex-col items-start">
-            Name
-            <input className=" bg-primaryBlack outline outline-lightBlack outline-[1px] text-white px-2 py-1 rounded-md"></input>
-          </label>
-          <label className="flex flex-col items-start">
-            Email
-            <input className=" bg-primaryBlack outline outline-lightBlack outline-[1px] text-white px-2 py-1 rounded-md"></input>
-          </label>
-          <label className="flex flex-col items-start">
-            Message
-            <textarea className=" bg-primaryBlack outline outline-lightBlack outline-[1px] text-white px-2 py-1 rounded-md"></textarea>
-          </label>
-          <button className="outline bg-turqoise outline-1 px-4 py-2 rounded-xl outline-lightBlack text-black duration-700">
-            Send
-          </button>
-        </form>
       </div>
     </section>
   );
