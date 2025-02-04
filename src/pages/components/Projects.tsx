@@ -30,9 +30,9 @@ const ecommerceapiPhotos = [
   "/images/projects/ecommerceapi/3.png",
 ];
 const mongoredisapiPhotos = [
-  "/images/projects/mongoredisapi/1.png",
-  "/images/projects/mongoredisapi/2.png",
-  "/images/projects/mongoredisapi/3.png",
+  "/images/projects/mongoapi/1.png",
+  "/images/projects/mongoapi/2.png",
+  "/images/projects/mongoapi/3.png",
 ];
 const listracePhotos = [
   "/images/projects/listrace/1.png",
