@@ -6,6 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <title>Erkan INCE | Portfolio</title>
         <meta property="og:title" content="Erkan INCE | Portfolio" />
         <meta
           property="og:description"
