@@ -74,6 +74,7 @@ const SkillsItem = ({ url, name }: { url: string; name: string }) => {
     >
       <Image
         alt={name}
+        unoptimized
         className="bg-gray-800  rounded-xl p-2 w-24 h-24"
         src={url}
         width={512}
