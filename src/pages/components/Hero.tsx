@@ -25,6 +25,7 @@ const Hero = () => {
       <div className="col-span-1 py-20  flex flex-col ">
         <Image
           alt=""
+          unoptimized
           width={1000}
           height={1000}
           className="contrast-150"

@@ -21,6 +21,7 @@ const Contact = () => {
             >
               <Image
                 alt=""
+                unoptimized
                 src="/images/svg/email.svg"
                 width={25}
                 height={25}
@@ -34,6 +35,7 @@ const Contact = () => {
             >
               <Image
                 alt=""
+                unoptimized
                 src="/images/svg/phone.svg"
                 width={25}
                 height={25}
@@ -54,6 +56,7 @@ const Contact = () => {
               >
                 <Image
                   alt=""
+                  unoptimized
                   src="/images/apps/linkedin.png"
                   width={512}
                   height={512}
@@ -68,6 +71,7 @@ const Contact = () => {
               >
                 <Image
                   alt=""
+                  unoptimized
                   src="/images/apps/github.png"
                   width={512}
                   height={512}

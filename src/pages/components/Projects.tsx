@@ -191,6 +191,7 @@ const ProjectCard: FC<{ project: ProjectInfo }> = ({ project }) => {
           {project.images.map((imgSrc, index) => (
             <Image
               width={3000}
+              unoptimized
               height={3000}
               key={index}
               src={imgSrc}
