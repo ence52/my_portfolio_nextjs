@@ -54,6 +54,7 @@ type ProjectInfo = {
   mobile: boolean;
   githubLink: string;
   techs: string[];
+  liveLink?: string;
 };
 
 const projectList: ProjectInfo[] = [
@@ -76,6 +77,7 @@ const projectList: ProjectInfo[] = [
     mobile: false,
     techs: ["NextJS", "Html", "CSS", "JavaScript", "VS Code"],
     githubLink: "https://github.com/ence52/tmdb-api-nextjs",
+    liveLink: "https://filmscope.vercel.app/",
   },
 
   {
@@ -186,16 +188,30 @@ const ProjectCard: FC<{ project: ProjectInfo }> = ({ project }) => {
             ))}
           </div>
         </div>
-        <Link
-          href={project.githubLink}
-          rel="noopener noreferrer"
-          target="_blank"
-          className={`md:w-1/3 outline bg-turqoise outline-1 px-4 py-2 text-center  rounded-xl outline-lightBlack text-black duration-700 ${
-            project.id % 2 === 0 ? "self-end" : "self-start"
-          } `}
-        >
-          Show on GitHub
-        </Link>
+        <div className="flex justify-between">
+          <Link
+            href={project.githubLink}
+            rel="noopener noreferrer"
+            target="_blank"
+            className={`md:w-1/3 outline bg-turqoise outline-1 px-4 py-2 text-center  rounded-xl outline-lightBlack text-black duration-700 ${
+              project.id % 2 === 0 ? "self-end" : "self-start"
+            } `}
+          >
+            Show on GitHub
+          </Link>
+          {project.liveLink && (
+            <Link
+              href={project.liveLink}
+              rel="noopener noreferrer"
+              target="_blank"
+              className={`md:w-1/3 outline bg-cyan-400 outline-1 px-4 py-2 text-center  rounded-xl outline-lightBlack text-black duration-700 ${
+                project.id % 2 === 0 ? "self-end" : "self-start"
+              } `}
+            >
+              Live Website
+            </Link>
+          )}
+        </div>
       </div>
 
       <div
