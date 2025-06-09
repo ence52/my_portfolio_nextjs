@@ -46,6 +46,19 @@ const listracePhotos = [
   "/images/projects/listrace/4.png",
   "/images/projects/listrace/5.png",
 ];
+const furniturePhotos = [
+  "/images/projects/furniture_ui_app/1.png",
+  "/images/projects/furniture_ui_app/2.png",
+  "/images/projects/furniture_ui_app/3.png",
+  "/images/projects/furniture_ui_app/4.png",
+  "/images/projects/furniture_ui_app/5.png",
+  "/images/projects/furniture_ui_app/6.png",
+];
+const lambAppPhotos = [
+  "/images/projects/lamb_app/1.png",
+  "/images/projects/lamb_app/2.png",
+  "/images/projects/lamb_app/3.png",
+];
 type ProjectInfo = {
   id: number;
   name: string;
@@ -75,13 +88,34 @@ const projectList: ProjectInfo[] = [
       "Built with Next.js and TMDB API, this website provides up-to-date information about the world of cinema. With a modern and sleek design, it offers detailed content on movies, TV shows, and actors.",
     images: filmscopePhotos,
     mobile: false,
-    techs: ["NextJS", "Html", "CSS", "JavaScript", "VS Code"],
+    techs: ["NextJS", "Html", "CSS", "TypeScript", "VS Code"],
     githubLink: "https://github.com/ence52/tmdb-api-nextjs",
     liveLink: "https://filmscope.vercel.app/",
   },
-
   {
     id: 2,
+    name: "Furniture UI Website",
+    description:
+      "This is a furniture company-themed website UI project that implements a design found online using Vite.",
+    images: furniturePhotos,
+    mobile: false,
+    techs: ["Vite", "Html", "CSS", "TypeScript", "VS Code", "TailwindCSS"],
+    githubLink: "https://github.com/ence52/furniture_ui_vite",
+    liveLink: "https://furniture-ui-vite.vercel.app/",
+  },
+  {
+    id: 3,
+    name: "Lamb Mobile App UI",
+    description:
+      "It is a mobile UI project for custom-designed lamp sales, based on a design found online and implemented with Flutter.",
+    images: lambAppPhotos,
+    mobile: true,
+    techs: ["Flutter", "VS Code"],
+    githubLink: "https://github.com/ence52/lamp_app_flutter",
+  },
+
+  {
+    id: 4,
     name: "E-Commerce API",
     description:
       "This is the backend API for an E-Commerce platform, built with FastAPI and Python. It handles product listings, user authentication, order management, and payment processing. The app is powered by MySQL for database management and Docker for containerization, ensuring scalability and ease of deployment.",
@@ -91,7 +125,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/e-commerce_app_backend",
   },
   {
-    id: 3,
+    id: 5,
     name: "Bakery App",
     description:
       "The Bakery App allows users to explore a variety of bakery products, view their details, and place orders directly from the app. Built with Flutter, this mobile app provides an engaging user experience with smooth navigation and real-time updates for product availability.",
@@ -101,7 +135,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/bakery_app_ui",
   },
   {
-    id: 4,
+    id: 6,
     name: "Car Selling App",
     description:
       "This app enables users to browse and list cars for sale. With its intuitive design, users can upload their car listings with ease, view available cars, and filter results based on their preferences. The app was built using Flutter to provide a native-like experience on both Android and iOS platforms.",
@@ -111,7 +145,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/car_selling_app_ui",
   },
   {
-    id: 5,
+    id: 7,
     name: "ListRace Website",
     description:
       "The ListRace website is a dynamic platform built with React. It allows users to create and view lists, track race results, and interact with various features through a clean and user-friendly interface. The website is designed for seamless navigation, offering a responsive experience on both desktop and mobile devices.",
@@ -121,7 +155,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/listrace_react_ui",
   },
   {
-    id: 6,
+    id: 8,
     name: ".Net API",
     description:
       "This is a RESTful API built using .NET Core and C#, providing a solid backend for handling data storage and real-time processing. It integrates MongoDB for efficient data storage and Redis for caching to improve performance. Docker is used for containerization, ensuring smooth deployment across environments.",
