@@ -96,7 +96,7 @@ const projectList: ProjectInfo[] = [
     id: 2,
     name: "Furniture UI Website",
     description:
-      "This is a furniture company-themed website UI project that implements a design found online using Vite.",
+      "It is a furniture company-themed website UI project based on a design found online, implemented with Vite. The project is fully responsive and mobile-friendly.",
     images: furniturePhotos,
     mobile: false,
     techs: ["Vite", "Html", "CSS", "TypeScript", "VS Code", "TailwindCSS"],
