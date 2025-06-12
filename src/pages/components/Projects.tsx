@@ -59,6 +59,22 @@ const lambAppPhotos = [
   "/images/projects/lamb_app/2.png",
   "/images/projects/lamb_app/3.png",
 ];
+const chatAppPhotos = [
+  "/images/projects/chat_app/1.png",
+  "/images/projects/chat_app/2.png",
+  "/images/projects/chat_app/3.png",
+  "/images/projects/chat_app/4.png",
+  "/images/projects/chat_app/5.png",
+  "/images/projects/chat_app/6.png",
+  "/images/projects/chat_app/7.png",
+  "/images/projects/chat_app/8.png",
+  "/images/projects/chat_app/9.png",
+  "/images/projects/chat_app/10.png",
+  "/images/projects/chat_app/11.png",
+  "/images/projects/chat_app/12.png",
+  "/images/projects/chat_app/13.png",
+  "/images/projects/chat_app/14.png",
+];
 type ProjectInfo = {
   id: number;
   name: string;
@@ -94,6 +110,24 @@ const projectList: ProjectInfo[] = [
   },
   {
     id: 2,
+    name: "React Native Firebase Chat App",
+    description:
+      "Built with React Native, Firebase, and TailwindCSS, this fully responsive chat app delivers real-time messaging, media sharing, and user presence features. Inspired by modern chat platforms, it offers a smooth and intuitive experience with dark/light theme support, secure authentication, and rich image preview options.",
+    images: chatAppPhotos,
+    mobile: true,
+    techs: [
+      "React Native",
+      "Firebase",
+      "ContextAPI",
+      "Html",
+      "CSS",
+      "TypeScript",
+      "VS Code",
+    ],
+    githubLink: "https://github.com/ence52/react_native_firebase_chat_app",
+  },
+  {
+    id: 3,
     name: "Furniture UI Website",
     description:
       "It is a furniture company-themed website UI project based on a design found online, implemented with Vite. The project is fully responsive and mobile-friendly.",
@@ -104,7 +138,7 @@ const projectList: ProjectInfo[] = [
     liveLink: "https://furniture-ui-vite.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Lamb Mobile App UI",
     description:
       "It is a mobile UI project for custom-designed lamp sales, based on a design found online and implemented with Flutter.",
@@ -115,7 +149,7 @@ const projectList: ProjectInfo[] = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "E-Commerce API",
     description:
       "This is the backend API for an E-Commerce platform, built with FastAPI and Python. It handles product listings, user authentication, order management, and payment processing. The app is powered by MySQL for database management and Docker for containerization, ensuring scalability and ease of deployment.",
@@ -125,7 +159,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/e-commerce_app_backend",
   },
   {
-    id: 5,
+    id: 6,
     name: "Bakery App",
     description:
       "The Bakery App allows users to explore a variety of bakery products, view their details, and place orders directly from the app. Built with Flutter, this mobile app provides an engaging user experience with smooth navigation and real-time updates for product availability.",
@@ -135,7 +169,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/bakery_app_ui",
   },
   {
-    id: 6,
+    id: 7,
     name: "Car Selling App",
     description:
       "This app enables users to browse and list cars for sale. With its intuitive design, users can upload their car listings with ease, view available cars, and filter results based on their preferences. The app was built using Flutter to provide a native-like experience on both Android and iOS platforms.",
@@ -145,7 +179,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/car_selling_app_ui",
   },
   {
-    id: 7,
+    id: 8,
     name: "ListRace Website",
     description:
       "The ListRace website is a dynamic platform built with React. It allows users to create and view lists, track race results, and interact with various features through a clean and user-friendly interface. The website is designed for seamless navigation, offering a responsive experience on both desktop and mobile devices.",
@@ -155,7 +189,7 @@ const projectList: ProjectInfo[] = [
     githubLink: "https://github.com/ence52/listrace_react_ui",
   },
   {
-    id: 8,
+    id: 9,
     name: ".Net API",
     description:
       "This is a RESTful API built using .NET Core and C#, providing a solid backend for handling data storage and real-time processing. It integrates MongoDB for efficient data storage and Redis for caching to improve performance. Docker is used for containerization, ensuring smooth deployment across environments.",
@@ -264,7 +298,7 @@ const ProjectCard: FC<{ project: ProjectInfo }> = ({ project }) => {
               alt={`Project ${project.id} - Image ${index}`}
               className={`rounded-2xl ${
                 project.mobile
-                  ? "md:h-[510px] h-[570px] object-cover"
+                  ? "md:h-[600px] h-[570px] object-cover"
                   : "md:h-[560px] h-[200px] object-contain"
               } w-full `}
             />
